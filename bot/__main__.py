@@ -62,7 +62,7 @@ def stats(update, context):
 def start(update, context):
     buttons = ButtonMaker()
     buttons.buildbutton("🅼🅰🅸🅽 🅶🆁🅾🆄🅿", "https://t.me/GraphicCommunity4")
-    buttons.buildbutton("Ⓒⓗⓐⓝⓝⓔⓛ", "https://t.me/MrAnonymouso02")
+    buttons.buildbutton("🄲🄷🄰🄽🄽🄴🄻", "https://t.me/MrAnonymouso02")
     buttons.buildbutton("ₒwₙₑᵣ👑", "https://t.me/Unknown_Helper_O02")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
