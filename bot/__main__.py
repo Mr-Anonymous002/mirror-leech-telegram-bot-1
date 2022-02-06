@@ -61,9 +61,9 @@ def stats(update, context):
 
 def start(update, context):
     buttons = ButtonMaker()
-    buttons.buildbutton("Main Group", "https://t.me/GraphicCommunity4")
-    buttons.buildbutton("Report Group", "https://t.me/MrAnonymouso02")
-    buttons.buildbutton("Owner👑", "https://t.me/Unknown_Helper_O02")
+    buttons.buildbutton("🅼🅰🅸🅽 🅶🆁🅾🆄🅿", "https://t.me/GraphicCommunity4")
+    buttons.buildbutton("Ⓒⓗⓐⓝⓝⓔⓛ", "https://t.me/MrAnonymouso02")
+    buttons.buildbutton("ₒwₙₑᵣ👑", "https://t.me/Unknown_Helper_O02")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
@@ -72,7 +72,7 @@ Type /{BotCommands.HelpCommand} to get a list of available commands
 '''
         sendMarkup(start_string, context.bot, update, reply_markup)
     else:
-        sendMarkup('Not AuthorIzed user🐼, make your own bot or Contact My OwNer for AuthorIzatIon', context.bot, update, reply_markup)
+        sendMarkup('🄽🄾🅃 🄰🅄🅃🄷🄾🅁🄸🅉🄴🄳 🅄🅂🄴🅁, 🄼🄰🄺🄴 🅈🄾🅄🅁 🄾🅆🄽 🄱🄾🅃 🄾🅁 🄲🄾🄽🅃🄰🄲🅃 🄼🅈 🄾🅆🄽🄴🅁 🄵🄾🅁 🄰🅄🅃🄷🄾🅁🄸🅉🄰🅃🄸🄾🄽 🥱', context.bot, update, reply_markup)
 
 def restart(update, context):
     restart_message = sendMessage("Restarting🥱...", context.bot, update)
