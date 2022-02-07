@@ -62,17 +62,18 @@ def stats(update, context):
 def start(update, context):
     buttons = ButtonMaker()
     buttons.buildbutton("🅼🅰🅸🅽 🅶🆁🅾🆄🅿", "https://t.me/GraphicCommunity4")
-    buttons.buildbutton("🄲🄷🄰🄽🄽🄴🄻", "https://t.me/MrAnonymouso02")
+    buttons.buildbutton("🅲🅷🅰🅽🅽🅴🅻", "https://t.me/MrAnonymouso02")
     buttons.buildbutton("ₒwₙₑᵣ👑", "https://t.me/Unknown_Helper_O02")
     reply_markup = InlineKeyboardMarkup(buttons.build_menu(2))
     if CustomFilters.authorized_user(update) or CustomFilters.authorized_chat(update):
         start_string = f'''
 This bot can mirror all your links to Google Drive!
-So, 𝙀𝙣𝙟𝙤𝙮 🐱 /And Yeah! 𝐓𝐡𝐚𝐧𝐤𝐬 𝐅𝐨𝐫 𝐔𝐬𝐢𝐧𝐠 𝐌𝐲 𝐁𝐨𝐭^°^
+So, 𝙀𝙣𝙟𝙤𝙮 🤟
+And Yeah! 𝐓𝐡𝐚𝐧𝐤𝐬 𝐅𝐨𝐫 𝐔𝐬𝐢𝐧𝐠 𝐌𝐲 𝐁𝐨𝐭^°^
 '''
         sendMarkup(start_string, context.bot, update, reply_markup)
     else:
-        sendMarkup('🄽🄾🅃 🄰🅄🅃🄷🄾🅁🄸🅉🄴🄳 🅄🅂🄴🅁, 🄼🄰🄺🄴 🅈🄾🅄🅁 🄾🅆🄽 🄱🄾🅃 🄾🅁 🄲🄾🄽🅃🄰🄲🅃 🄼🅈 🄾🅆🄽🄴🅁 🄵🄾🅁 🄰🅄🅃🄷🄾🅁🄸🅉🄰🅃🄸🄾🄽 🥱', context.bot, update, reply_markup)
+        sendMarkup('𝙽𝚘𝚝 𝙰𝚞𝚝𝚑𝚘𝚛𝚒𝚣𝚎𝚍 𝚄𝚜𝚎𝚛 🐼, 𝙼𝚊𝚔𝚎 𝚈𝚘𝚞𝚛 𝙾𝚠𝚗 𝙱𝚘𝚝 𝚘𝚛 𝙲𝚘𝚗𝚝𝚊𝚌𝚝 𝙼𝚢 𝙾𝚠𝚗𝚎𝚛 𝚏𝚘𝚛 𝙰𝚞𝚝𝚑𝚘𝚛𝚒𝚣𝚊𝚝𝚒𝚘𝚗!', context.bot, update, reply_markup)
 
 def restart(update, context):
     restart_message = sendMessage("Restarting🥱...", context.bot, update)
